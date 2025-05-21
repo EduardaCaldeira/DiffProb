@@ -57,5 +57,5 @@ Note: keep in mind that **Rand** can be applied before performing step 1
 6. Run `label_mapping.py` if you want to confirm that the new number of ids **and** to generate a label map, as some identities might be eliminated (this step is **mandatory**)
 7. Run `train_everything.py` under the desired settings
 
-### IJB-C evaluation
+### IJB-C Evaluation
 Run `eval_ijbc.py` to perform IJB-C evaluation
