@@ -27,7 +27,7 @@ You can request access to the files containing the indexes of the kept samples f
 
 ## How to Run?
 
-1. Run `train_original.py` to train the original model, whose predictions will be used to perform the pruning (in the paper, ResNet-50 + CosFace loss). This script will automatically generate the files necessary to perform **DynUnc** pruning
+1. Run `train_everything.py` to train the original model (set `config.is_original_train=True` in `config/config.py`), whose predictions will be used to perform the pruning (in the paper, ResNet-50 + CosFace loss). This script will automatically generate the files necessary to perform **DynUnc** pruning
 
 ### DynUnc
 2. Run `coreset_dynunc.py` to generate the kept sample list for the selected pruning percentage
