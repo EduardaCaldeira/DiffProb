@@ -1,3 +1,49 @@
 # This is the official repository of the paper: "DiffProb: Data Pruning for Face Recognition" (accepted at the LFA Workshop, FG 2025)
 
-The code will be made publicly available soon.
+## Abstract
+Face recognition models have made substantial progress due to advances in deep learning and the availability of large-scale datasets. However, reliance on massive annotated datasets introduces challenges related to training computational cost and data storage, as well as potential privacy concerns regarding managing large face datasets. This paper presents DiffProb, the first data pruning approach for the application of face recognition. DiffProb assesses the prediction probabilities of training samples within each identity and prunes the ones with identical or close prediction probability values, as they are likely reinforcing the same decision boundaries, and thus contribute minimally with new information. We further enhance this process with an auxiliary cleaning mechanism to eliminate mislabeled and label-flipped samples, boosting data quality with minimal loss. Extensive experiments on CASIA-WebFace with different pruning ratios and multiple benchmarks, including LFW, CFP-FP, and IJB-C, demonstrate that DiffProb can prune up to 50% of the dataset while maintaining or even, in some settings, improving the verification accuracies. Additionally, we demonstrate DiffProb’s robustness across different architectures and loss functions. Our method significantly reduces training cost and data volume, enabling efficient face recognition training and reducing the reliance on massive datasets and their demanding management.
+
+## Pruned Dataset Files
+
+## Results
+
+## Impact of Face Data Pruning
+
+## Generalizability Across Different Losses
+
+## Generalizability Across Different Network Architectures
+
+## Impact of Data Cleaning
+
+## Setup
+
+## How to Run?
+
+1. Run `train_original.py` to train the original model, whose predictions will be used to perform the pruning (in the paper, ResNet-50 + CosFace loss). This script will automatically generate the files necessary to perform **DynUnc** pruning
+
+### DynUnc
+2. Run `coreset_dynunc.py` to generate the kept sample list for the selected pruning percentage
+3. Run `label_mapping.py` if you want to confirm that the number of ids has not been altered (this step is **not mandatory**)
+4. Run `train_everything.py` under the desired settings
+
+### Rand
+Note: keep in mind that **Rand** can be applied before performing step 1
+2. Run `coreset_rand.py` to generate the kept sample list for the selected pruning percentage
+3. Run `label_mapping.py` if you want to confirm that the number of ids has not been altered (this step is **not mandatory**)
+4. Run `train_everything.py` under the desired settings
+
+### DiffProb (ours)
+2. Run `eval_trainset.py` to generate the ground truth prediction of the pre-trained FR model for each sample
+
+**Without Cleaning**
+
+3. Run `eval_simprobs.py` to generate the kept sample list for the selected pruning percentage
+4. Run `label_mapping.py` if you want to confirm that the number of ids has not been altered (this step is **not mandatory**)
+5. Run `train_everything.py` under the desired settings
+
+**With Cleaning**
+
+3. Run `clean_trainset.py` to apply our auxiliary cleaning mechanism
+4. Run `eval_simprobs_clean.py` to generate the kept sample list for the selected pruning percentage
+5. Run `label_mapping.py` if you want to confirm that the new number of ids **and** to generate a label map, as some identities might be eliminated (this step is **mandatory**)
+6. Run `train_everything.py` under the desired settings
