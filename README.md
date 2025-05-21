@@ -5,15 +5,25 @@ Face recognition models have made substantial progress due to advances in deep l
 
 ## Pruned Dataset Files
 
+You can request access to the files containing the indexes of the kept samples for each pruning strategy applied in this work [here](https://drive.google.com/drive/folders/1Dh0tKCR_n0Nh3B4amMwy_bBNvkpwwFpK?usp=sharing).
+
 ## Results
 
 ## Impact of Face Data Pruning
 
+<img src="tables/original.png" width="600"/>
+
 ## Generalizability Across Different Losses
+
+<img src="tables/cross_loss.png" width="600"/>
 
 ## Generalizability Across Different Network Architectures
 
+<img src="tables/cross_net.png" width="600"/>
+
 ## Impact of Data Cleaning
+
+<img src="tables/cleaning.png" width="600"/>
 
 ## Setup
 
@@ -45,5 +55,9 @@ Note: keep in mind that **Rand** can be applied before performing step 1
 
 3. Run `clean_trainset.py` to apply our auxiliary cleaning mechanism
 4. Run `eval_simprobs_clean.py` to generate the kept sample list for the selected pruning percentage
-5. Run `label_mapping.py` if you want to confirm that the new number of ids **and** to generate a label map, as some identities might be eliminated (this step is **mandatory**)
-6. Run `train_everything.py` under the desired settings
+5. Run `generate_label_dict.py` to generate a dictionary associating each identity (class label) with the indexes of its samples
+6. Run `label_mapping.py` if you want to confirm that the new number of ids **and** to generate a label map, as some identities might be eliminated (this step is **mandatory**)
+7. Run `train_everything.py` under the desired settings
+
+### IJB-C evaluation
+Run `eval_ijbc.py` to perform IJB-C evaluation
