@@ -51,11 +51,10 @@ Note: keep in mind that **Rand** can be applied before performing step 1
 
 **With Cleaning**
 
-3. Run `clean_trainset.py` to apply our auxiliary cleaning mechanism
-4. Run `eval_simprobs_clean.py` to generate the kept sample list for the selected pruning percentage
-5. Run `generate_label_dict.py` to generate a dictionary associating each identity (class label) with the indexes of its samples
-6. Run `label_mapping.py` if you want to confirm that the new number of ids **and** to generate a label map, as some identities might be eliminated (this step is **mandatory**)
-7. Run `train_everything.py` under the desired settings
+3. Run `clean_trainset.py` to apply our auxiliary cleaning mechanism and generate the kept sample list for the selected pruning percentage
+4. Run `generate_label_dict.py` to generate a dictionary associating each identity (class label) with the indexes of its samples
+5. Run `label_mapping.py` if you want to confirm that the new number of ids **and** to generate a label map, as some identities might be eliminated (this step is **mandatory**)
+6. Run `train_everything.py` under the desired settings
 
 ### IJB-C Evaluation
 Run `eval_ijbc.py` to perform IJB-C evaluation
