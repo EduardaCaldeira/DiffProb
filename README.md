@@ -9,23 +9,21 @@ You can request access to the files containing the indexes of the kept samples f
 
 ## Results
 
-## Impact of Face Data Pruning
+### Impact of Face Data Pruning
 
 <img src="tables/original.png" width="600"/>
 
-## Generalizability Across Different Losses
+### Generalizability Across Different Losses
 
 <img src="tables/cross_loss.png" width="600"/>
 
-## Generalizability Across Different Network Architectures
+### Generalizability Across Different Network Architectures
 
 <img src="tables/cross_net.png" width="600"/>
 
-## Impact of Data Cleaning
+### Impact of Data Cleaning
 
 <img src="tables/cleaning.png" width="600"/>
-
-## Setup
 
 ## How to Run?
 
