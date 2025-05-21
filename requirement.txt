@@ -1,0 +1,13 @@
+tensorboard
+easydict
+scikit-learn
+matplotlib
+pandas
+scikit-image==0.24.0
+menpo
+prettytable
+mxnet==1.6.0
+numpy==1.23.5
+pytorch-model-summary
+opencv-python
+torchvision
