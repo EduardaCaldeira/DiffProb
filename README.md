@@ -58,3 +58,23 @@ Note: keep in mind that **Rand** can be applied before performing step 1
 
 ### IJB-C Evaluation
 Run `eval_ijbc.py` to perform IJB-C evaluation
+
+## Citation 
+
+If you use any of the code or pruned datasets provided in this repository, please cite the following paper:
+
+<pre>@misc{caldeira2025diffprobdatapruningface,
+      title={DiffProb: Data Pruning for Face Recognition}, 
+      author={Eduarda Caldeira and Jan Niklas Kolf and Naser Damer and Fadi Boutros},
+      year={2025},
+      eprint={2505.15272},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2505.15272}, 
+} </pre>
+
+## License
+
+<pre>This project is licensed under the terms of the Attribution-NonCommercial 4.0 
+International (CC BY-NC 4.0) license. 
+Copyright (c) 2025 Fraunhofer Institute for Computer Graphics Research IGD Darmstadt </pre>
