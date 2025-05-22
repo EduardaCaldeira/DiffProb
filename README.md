@@ -25,6 +25,10 @@ You can request access to the files containing the indexes of the kept samples f
 
 <img src="tables/cleaning.png" width="600"/>
 
+## Download CASIA-WebFace
+
+You can download the CASIA-WebFace dataset [here](https://github.com/deepinsight/insightface/tree/master/recognition/_datasets_).
+
 ## How to Run?
 
 1. Run `train_everything.py` to train the original model (set `config.is_original_train=True` in `config/config.py`), whose predictions will be used to perform the pruning (in the paper, ResNet-50 + CosFace loss). This script will automatically generate the files necessary to perform **DynUnc** pruning
@@ -61,7 +65,7 @@ Run `eval_ijbc.py` to perform IJB-C evaluation
 
 ## Citation 
 
-If you use any of the code or pruned datasets provided in this repository, please cite the following paper:
+If you use any of the code, pruned datasets or models provided in this repository, please cite the following paper:
 
 <pre>@misc{caldeira2025diffprobdatapruningface,
       title={DiffProb: Data Pruning for Face Recognition}, 
