@@ -79,6 +79,5 @@ If you use any of the code, pruned datasets or models provided in this repositor
 
 ## License
 
-<pre>This project is licensed under the terms of the Attribution-NonCommercial 4.0 
-International (CC BY-NC 4.0) license. 
+<pre>This project is licensed under the terms of the Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license. 
 Copyright (c) 2025 Fraunhofer Institute for Computer Graphics Research IGD Darmstadt </pre>
