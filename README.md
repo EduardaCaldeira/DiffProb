@@ -5,7 +5,7 @@ Face recognition models have made substantial progress due to advances in deep l
 
 ## Pruned Dataset Files
 
-You can request access to the files containing the indexes of the kept samples for each pruning strategy applied in this work [here](https://drive.google.com/drive/folders/1Dh0tKCR_n0Nh3B4amMwy_bBNvkpwwFpK?usp=sharing).
+You can request access to the files containing the indexes of the kept samples for each pruning strategy applied in this work [here](https://drive.google.com/drive/folders/1Dh0tKCR_n0Nh3B4amMwy_bBNvkpwwFpK?usp=sharing). **Please share your name, affiliation, and official email in the request form**
 
 ## Results
 
